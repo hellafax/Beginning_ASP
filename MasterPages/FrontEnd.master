@@ -9,7 +9,7 @@
 </head>
 <body>
   <form id="form1" runat="server">
-      <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
+    <asp:ScriptManager ID="ScriptManager1" runat="server" EnablePageMethods="true"></asp:ScriptManager>
     <div id="PageWrapper">
       <header><a href="/"></a></header>
       <nav>
@@ -22,7 +22,9 @@
         <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" ShowStartingNode="False" />
       </nav>
       <section id="MainContent">
-        <asp:SiteMapPath ID="SiteMapPath1" runat="server"></asp:SiteMapPath><br /><br />
+        <asp:SiteMapPath ID="SiteMapPath1" runat="server"></asp:SiteMapPath>
+        <br />
+        <br />
         <asp:ContentPlaceHolder ID="cpMainContent" runat="server">
         </asp:ContentPlaceHolder>
       </section>

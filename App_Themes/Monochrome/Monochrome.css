@@ -231,16 +231,17 @@ img
   border: 0;
 }
 
-
-.ErrorMessage {
-    color: red;
+.ErrorMessage
+{
+  color: Red;
 }
 
-.PleaseWait {
-    height: 32px;
-    width: 500px;
-    background-image: url(Images/PleaseWait.gif);
-    background-repeat: no-repeat;
-    padding-left: 40px;
-    line-height: 32px;
+.PleaseWait
+{
+  height: 32px;
+  width: 500px;
+  background-image: url(Images/PleaseWait.gif);
+  background-repeat: no-repeat;
+  padding-left: 40px;
+  line-height: 32px;
 }

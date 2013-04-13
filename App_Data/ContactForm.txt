@@ -1,10 +1,9 @@
-﻿Hi There,
+﻿Hi there,
 
 A user has left the following feedback at the site:
 
-Name:				##Name##
-E-Mail Address:		##Email##
-Home Phone:			##HomePhone##
-Business Phone:		##WorkPhone##
-Comments:			
-##Comments##
+Name: ##Name##
+E-mail address: ##Email##
+Home phone: ##HomePhone##
+Business phone: ##BusinessPhone##
+Comments: ##Comments##
