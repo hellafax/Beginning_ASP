@@ -22,7 +22,8 @@
 </script>
 <asp:UpdatePanel ID="UpdatePanel1" runat="server">
   <ContentTemplate>
-    <table class="auto-style1" runat="server" id="FormTable">
+    <div id="TableWrapper">
+      <table class="auto-style1" runat="server" id="FormTable">
     <tr>
       <td colspan="3">
         <h1>Get in touch with us</h1>
@@ -98,7 +99,9 @@
       </td>
     </tr>
     </table>
-    <asp:Label ID="Message" runat="server" Text="Message Sent" Visible="false" />
+        </div>
+    <asp:Label ID="Message" runat="server" CssClass="Attention" Text="Message Sent" Visible="false" />
+      <p runat="server" id="MessageSentPara" visible="false">Thank you for your message.  We'll get in touch with you if necessary!</p>
   </ContentTemplate>
 </asp:UpdatePanel>
 <asp:UpdateProgress ID="UpdateProgress1" runat="server" AssociatedUpdatePanelID="UpdatePanel1">
@@ -108,3 +111,19 @@
     </div>
   </ProgressTemplate>
 </asp:UpdateProgress>
+<script type="text/javascript">
+    $(function() {
+        $('form').bind('submit', function()
+        {
+            if (Page_IsValid)
+            {
+                $('#TableWrapper').slideUp(3000);
+            }
+        });
+    });
+    //Step 5 below
+    function pageLoad()
+    {
+        $('.Attention').animate({ width: '600px' }, 3000).animate({ width: '100px' }, 3000).fadeOut('slow');
+        }
+</script>

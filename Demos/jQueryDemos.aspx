@@ -21,9 +21,12 @@
     <script type="text/javascript">
         $(function()
         {
-            $('#DemoTable tr')
-            .bind('mouseover', function() { $(this).css('background-color', 'yellow') })
-            .bind('mouseout', function() { $(this).css('background-color', '') });
+            $('h1').animate({
+                opacity: .4,
+                marginLeft: '50px',
+                fontSize: '50px',
+            }, 8500 )
+                    
         });
     </script>
 </asp:Content>
