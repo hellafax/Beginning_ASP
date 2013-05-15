@@ -11,7 +11,7 @@
   <form id="form1" runat="server">
     <asp:ScriptManager ID="ScriptManager1" runat="server" EnablePageMethods="true">
         <Scripts>
-            <asp:ScriptReference Path="~/Scripts/jquery-1.9.1.min.js" />
+            <asp:ScriptReference Path="~/Scripts/jquery-2.0.0.min.js" />
         </Scripts>
     </asp:ScriptManager>
     <div id="PageWrapper">
